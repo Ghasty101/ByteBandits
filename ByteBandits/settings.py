@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY")
+SECRET_KEY = 'django-insecure--f&q^_#@yy7%bj0(zt#^g=^3t+uu2h!5z6v!sr#stvhs1a1-h9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", "False").lower == "true"
+DEBUG = True
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = ['https://bytebandits-g0sa.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -116,7 +116,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
