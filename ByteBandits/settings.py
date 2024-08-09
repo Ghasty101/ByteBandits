@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure--f&q^_#@yy7%bj0(zt#^g=^3t+uu2h!5z6v!sr#stvhs1a1-h9
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://bytebandits-g0sa.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    'bytebandits-g0sa.onrender.com',  # Your Render service URL
+    'localhost',                      # Local development
+    '127.0.0.1',                      # Local development
+    # Add any other domains you plan to use
+]
 
 
 # Application definition
